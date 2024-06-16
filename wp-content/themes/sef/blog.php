@@ -25,8 +25,8 @@ Template Name: livre d'or
         }
     }
     ?>
-    <section class="main__sections__form">
-        <article class="main__sections__form__post">
+    <section class="main__sections__blog">
+        <article class="main__sections__blog__post">
             <h4>
                 Name
             </h4>
