@@ -1,11 +1,15 @@
-
-@media (min-width: 1000px) {
+@media (min-width: 1400px) {
   .header {
 
     .mobile-menu {
       &__container {
         position: initial;
         height: initial;
+        padding-top: .1em;
+      }
+
+      &__item:last-of-type {
+        margin: 0;
       }
 
       &__link {
@@ -13,12 +17,14 @@
       }
 
       &__list {
+        padding-top: 8px;
         display: flex;
         overflow: initial;
       }
 
       &__item {
         font-size: 2em;
+        margin-right: 1em;
       }
 
       &__btn {

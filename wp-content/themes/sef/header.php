@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="<?= dw_asset('css/style.css'); ?>">
     <title><?= get_the_title() ?></title>
 </head>
-<body>
+<body id="contact-body">
 <h1 class="hidden-title"><?= get_the_title() ?></h1>
 <header class="header">
     <div class="header__icon">
