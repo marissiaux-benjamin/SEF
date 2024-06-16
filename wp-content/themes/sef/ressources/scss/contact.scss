@@ -57,9 +57,9 @@
 }
 
 .main__sections__form, .main__sections__blog {
+  position: relative;
   padding: 2em 2em 0 2em;
   background-color: $white;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
 
   label {
     color: $primary-color;
@@ -103,6 +103,16 @@
   }
 }
 
+.main__sections__form:after, .main__sections__blog:after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  height: 3px;
+  width: 80%;
+  background-color: $primary-color;
+
+}
+
 #before-form {
   padding: 2em;
   padding-bottom: 0;
@@ -119,4 +129,6 @@
     line-height: 1.3em;
   }
 }
+
+@import "contact-mediaqueries/contact-over-800px";
 
