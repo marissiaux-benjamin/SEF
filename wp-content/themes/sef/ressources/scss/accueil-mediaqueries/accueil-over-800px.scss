@@ -1,0 +1,40 @@
+@media (min-width: 800px) {
+
+  .main {
+
+    &__landing {
+      background-image: none;
+
+      #main__landing__title {
+        font-size: 15em;
+        margin-left: 0;
+        text-align: center;
+      }
+
+      p {
+        font-size: 2em;
+        text-align: center;
+        margin-left: 0;
+      }
+    }
+
+    &__sections {
+      padding-top: $section-margin-bottom;
+      padding-bottom: $section-margin-bottom;
+      background-color: $primary-color;
+
+      &__others-p {
+        margin-left: calc(100% - 80%);
+        max-width: 50%;
+      }
+
+      &__others-p:last-of-type {
+        margin-bottom: 0;
+      }
+
+      &__others-p:nth-child(even) {
+        margin-left: calc(100% - 65%);
+      }
+    }
+  }
+}

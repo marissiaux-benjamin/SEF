@@ -1,0 +1,24 @@
+.main {
+  &__galerie {
+    &__section-galerie {
+      margin-bottom: 2.1875em;
+      padding: 2em;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      background-color: $white;
+      color: $primary-color;
+
+      img {
+        width: 100%;
+        padding-bottom: 1em;
+      }
+
+      p{
+        font-family: $font-stack-normal;
+        font-size: 1em;
+        line-height: 1.3em;
+        padding-bottom: 1em;
+      }
+
+    }
+  }
+}
