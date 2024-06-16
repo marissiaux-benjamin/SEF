@@ -1,0 +1,13 @@
+@media (min-width: 479px) and (max-width: 511px) {
+  .footer {
+    &__section {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 512px) {
+  .footer {
+    justify-content: center;
+  }
+}

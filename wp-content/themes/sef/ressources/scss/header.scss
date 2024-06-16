@@ -1,0 +1,148 @@
+.header {
+  z-index: 9999;
+  background-color: $white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  box-shadow: $shadow;
+
+  &__icon {
+    display: inline-block;
+    height: 40px;
+    padding-left: 1em;
+    padding-top: 1em;
+
+    a {
+      img {
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+  .mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    display: inline;
+    height: 50px;
+    z-index: 9999999;
+
+    &__btn {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 50px;
+      cursor: pointer;
+      transition: .4s;
+      z-index: 2;
+    }
+
+    &__icon {
+      display: block;
+      position: relative;
+      background-color: $primary-color;
+      width: 70%;
+      height: 5px;
+      transition: .4s;
+
+      &::after,
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background: $primary-color;
+        height: 5px;
+        transition: .4s;
+      }
+
+      &::after {
+        width: 100%;
+        top: 10px;
+      }
+
+      &::before {
+        width: 100%;
+        top: -10px;
+      }
+    }
+
+    &__container {
+      position: fixed;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 50px;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      height: 0;
+      opacity: 1;
+      transition: .5s;
+      transition-delay: .2s;
+      overflow: hidden;
+    }
+
+    &__list {
+      list-style: none;
+    }
+
+    &__item {
+      font-family: $font-stack-normal;
+      font-size: 3.5em;
+      padding-bottom: .6em;
+    }
+
+    &__link {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    &__checkbox {
+      display: none;
+
+      &:checked ~ {
+        .mobile-menu {
+          &__container {
+            background-color: $primary-color;
+            height: 100%;
+            transition-delay: 0s;
+            top: 0;
+          }
+
+          &__btn {
+            position: sticky;
+            right: 2%;
+
+            .mobile-menu__icon {
+              background: transparent;
+
+              &::before,
+              &::after {
+                top: 0;
+                left: -10%;
+                background-color: white;
+                width: 120%;
+              }
+
+              &::after {
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+              }
+
+              &::before {
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//imports des mediaqueries
+@import "header-mediaqueries/header-desktop";

@@ -1,0 +1,64 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.hidden-title {
+  overflow: hidden !important;
+  font-size: 0 !important;
+  text-indent: -100000px !important;
+  position: absolute;
+}
+
+.main {
+  color: $white;
+
+  &__landing {
+    text-align: center;
+    background-image: url($landing-image);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .5);
+    color: $white;
+
+    h2 {
+      font-size: $sef-title;
+      font-family: $font-stack-bold;
+    }
+
+    p:first-of-type {
+      padding-top: 5em;
+      padding-bottom: 1em;
+    }
+
+    p {
+      font-family: $font-stack-normal;
+      padding-bottom: 3em;
+    }
+
+    figure {
+      img {
+        width: 100%;
+        transform: translateY(.35em);
+      }
+    }
+  }
+
+  &__sections-accueil {
+    text-align: center;
+    background-color: $white;
+
+    &__others-p {
+      font-family: $font-stack-normal;
+      font-size: $section-h3;
+      background-color: $primary-color;
+      margin-bottom: 1em;
+      padding: 2em 0 2em 0;
+      box-shadow: $shadow;
+
+      a {
+        color: $white;
+      }
+    }
+  }
+}

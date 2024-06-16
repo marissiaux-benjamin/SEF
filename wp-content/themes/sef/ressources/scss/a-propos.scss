@@ -1,0 +1,78 @@
+.main {
+  &__landing {
+    &__title-other-pages {
+      padding: 3em 0 2em 0;
+    }
+  }
+
+  &__sections {
+    &__section {
+      margin-bottom: $section-margin-bottom;
+      padding: 2em;
+      box-shadow: $shadow;
+      background-color: $primary-color;
+
+      h3 {
+        font-family: $font-stack-bold;
+        font-size: $section-h3;
+      }
+
+      #italic-p {
+        font-family: $font-stack-italic;
+      }
+
+      p:first-of-type {
+        padding-top: 1em;
+      }
+
+      p {
+        font-family: $font-stack-normal;
+        font-size: 1em;
+        line-height: 1.3em;
+        padding-bottom: 1em;
+      }
+
+      ul {
+        list-style: none;
+        line-height: 1.2em;
+
+        li {
+          position: relative;
+          font-family: $font-stack-normal;
+          padding-bottom: .5em;
+          margin-left: 1.3em;
+        }
+
+        li:before {
+          position: absolute;
+          top: .5em;
+          left: -1.3em;
+          content: "";
+          width: 1em;
+          height: 1em;
+          background-image: url($list-dots);
+          background-repeat: no-repeat;
+        }
+      }
+
+      &__img-before-text {
+        padding-bottom: 2.5em;
+      }
+
+      &__btn-container {
+        padding-top: 2em;
+        text-align: center;
+
+        &__btn {
+          text-decoration: none;
+          font-size: $btn-font-size;
+          box-shadow: $shadow;
+          color: $primary-color;
+          padding: $buttons-padding;
+          background-color: white;
+        }
+      }
+
+    }
+  }
+}

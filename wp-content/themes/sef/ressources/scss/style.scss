@@ -1,0 +1,10 @@
+// 1. cd wp-content/themes/sef/ressources/scss
+//2. sass --watch style.scss:../css/style.css
+@import "../css/fonts.css";
+@import "variables";
+@import "header";
+@import "accueil";
+@import "a-propos";
+@import "nos-magasins";
+@import "contact";
+@import "footer";
