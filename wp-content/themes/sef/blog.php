@@ -45,7 +45,7 @@ Template Name: livre d'or
             <textarea type="text" id="message" name="mon-champ" maxlength="500" rows="2"
                       placeholder="Ex: Merci à tous le staff du SEF!"></textarea>
             <div>
-                <input type="submit" value="Publier"></input>
+                <input type="submit" value="Publier">
             </div>
         </form>
     </section>
