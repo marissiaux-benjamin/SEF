@@ -42,5 +42,7 @@
     </section>
 </footer>
 </body>
+<script src="<?= dw_asset('js/main.js') ?>"></script>
+
 </html>
 

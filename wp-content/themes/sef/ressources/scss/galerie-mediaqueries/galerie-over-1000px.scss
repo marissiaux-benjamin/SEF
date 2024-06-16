@@ -1,0 +1,16 @@
+@media (min-width: 1000px) {
+  .main {
+    &__sections {
+      &__section-galerie {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 2em;
+
+        &__item {
+          width: 20%;
+        }
+      }
+    }
+  }
+}

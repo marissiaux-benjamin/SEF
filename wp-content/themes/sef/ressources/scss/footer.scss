@@ -32,12 +32,11 @@
           text-decoration: underline;
         }
 
-        &__link:hover, &__mail:hover, &__nav:hover{
+        &__link:hover, &__mail:hover, &__nav:hover {
           text-decoration: none;
         }
       }
     }
-
 
     &__item {
       &__facebook {
