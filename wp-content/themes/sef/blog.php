@@ -26,28 +26,9 @@ Template Name: livre d'or
     }
     ?>
     <section class="main__sections__blog">
-        <article class="main__sections__blog__post">
-            <h4>
-                Name
-            </h4>
-            <p>
-                updated_at
-            </p>
-            <p>
-                message
-            </p>
-        </article>
-        <form action="#">
-            <label for="nom">Nom complet *</label>
-            <input type="text" id="nom" name="mon-champ" placeholder="Ex: Jean Sanchez">
 
-            <label for="message">Message *</label>
-            <textarea type="text" id="message" name="mon-champ" maxlength="500" rows="2"
-                      placeholder="Ex: Merci à tous le staff du SEF!"></textarea>
-            <div>
-                <input type="submit" value="Publier">
-            </div>
-        </form>
+        <?= apply_filters('the_content', '[contact-form-7 id="b0c2840" title="Livre d\'or"]') ?>
+
     </section>
 </main>
 <?= get_footer() ?>
