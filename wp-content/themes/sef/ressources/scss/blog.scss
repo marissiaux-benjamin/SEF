@@ -1,0 +1,26 @@
+.main {
+  &__sections {
+    &__blog {
+      padding: 2em;
+
+      &__post {
+        padding-bottom: 1.25em;
+        border-bottom: 2px solid $primary-color;
+        margin-bottom: 4em;
+        color: $primary-color;
+
+        h4 {
+          font-family: $font-stack-bold;
+          font-size: $h4;
+        }
+        p:last-of-type{
+          padding-top: 1.7em;
+        }
+
+        p {
+          font-family: $font-stack-normal;
+        }
+      }
+    }
+  }
+}

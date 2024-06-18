@@ -1,0 +1,23 @@
+@media (min-width: 1300px) {
+  @media (min-width: 800px) {
+
+    .main {
+
+      &__sections {
+
+        &__others-p {
+          margin-left: calc(100% - 80%);
+          max-width: 40%;
+        }
+
+        &__others-p:last-of-type {
+          margin-bottom: 0;
+        }
+
+        &__others-p:nth-child(even) {
+          margin-left: calc(100% - 65%);
+        }
+      }
+    }
+  }
+}

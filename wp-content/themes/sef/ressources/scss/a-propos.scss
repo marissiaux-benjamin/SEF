@@ -1,16 +1,32 @@
 .main {
   &__landing {
     &__title-other-pages {
+      font-size: $page-titles-h2;
+      font-family: $font-stack-bold;
       padding: 3em 0 2em 0;
     }
+
   }
 
   &__sections {
     &__section {
+      position: relative;
       margin-bottom: $section-margin-bottom;
       padding: 2em;
       box-shadow: $shadow;
-      background-color: $primary-color;
+      background-color: $white;
+      color: $primary-color;
+
+      &__toit {
+        position: absolute;
+        top: -30%;
+        left: 0;
+        min-width: 100%;
+      }
+
+      img {
+        width: 100%;
+      }
 
       h3 {
         font-family: $font-stack-bold;
@@ -63,16 +79,42 @@
         padding-top: 2em;
         text-align: center;
 
+        &__btn-white {
+          color: $primary-color;
+          background-color: $white;
+        }
+
         &__btn {
+          color: $white;
+          background-color: $primary-color;
+
+        }
+
+        &__btn, &__white-btn {
+          display: inline-block;
           text-decoration: none;
           font-size: $btn-font-size;
           box-shadow: $shadow;
-          color: $primary-color;
           padding: $buttons-padding;
-          background-color: white;
+          transition: .4s ease-in-out;
+        }
+
+        &__btn:active {
+          font-size: 1.2em;
+          box-shadow: none;
+        }
+
+        &__btn:hover {
+          transform: scale(1.3);
         }
       }
+    }
 
+    &__section:last-of-type {
+      margin-bottom: 0;
     }
   }
 }
+
+@import "a-propos-mediaqueries/a-propos-over-800-px";
+@import "a-propos-mediaqueries/a-propos-over-1200px";

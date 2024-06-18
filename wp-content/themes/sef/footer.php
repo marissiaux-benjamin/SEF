@@ -33,14 +33,16 @@
                 <a href="#" class="footer__section__list__item__nav">Facebook</a>
             </li>
             <li class="footer__section__list__item">
-                <a href="#" class="footer__section__list__item__nav">FAQ</a>
+                <a href="http://sef.test/faq" class="footer__section__list__item__nav">FAQ</a>
             </li>
             <li class="footer__section__list__item">
-                <a href="#" class="footer__section__list__item__nav">Mentions l&eacute;gales</a>
+                <a href="http://sef.test/mentions-legales" class="footer__section__list__item__nav">Mentions l&eacute;gales</a>
             </li>
         </ul>
     </section>
 </footer>
 </body>
+<script src="<?= dw_asset('js/main.js') ?>"></script>
+
 </html>
 

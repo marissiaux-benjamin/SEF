@@ -1,0 +1,15 @@
+@media (min-width: 800px) {
+  .main {
+
+    &__sections {
+      &__section {
+        margin-left: calc(100% - 90%);
+        width: 50%;
+      }
+
+      &__section:nth-child(even) {
+        margin-left: calc(100% - 70%);
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@media (min-width: 1000px) {
+  .main {
+    &__landing{
+      &__title-other-pages{
+        font-size: 6em;
+      }
+    }
+    &__sections {
+      &__section {
+        div {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+        }
+
+        &__house-1 {
+          align-self: flex-start;
+        }
+
+
+        &__house-1, &__house-2 {
+          max-width: 40%;
+
+          p {
+            padding-bottom: 1em;
+            display: inline;
+          }
+
+          &__img-before-text {
+          }
+        }
+
+      }
+    }
+  }
+}

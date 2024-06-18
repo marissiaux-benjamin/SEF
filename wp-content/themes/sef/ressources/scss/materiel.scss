@@ -1,0 +1,40 @@
+#wpcf7-f646-o1:after{
+  content: "";
+  position: absolute;
+  left: 10%;
+  height: 3px;
+  width: 80%;
+  background-color: #2154A7;
+  color: #2154A7;
+}
+.main-material label{
+  margin-bottom: 0;
+}
+
+.wpcf7-list-item {
+  display: flex;
+}
+
+.first, .last {
+  width: 2em;
+}
+
+.checkboxes .wpcf7-list-item:nth-child(2) {
+  width: 2em;
+}
+
+.wpcf7-list-item-label, .type-material {
+  color: #2154A7;
+  font-family: "Helvetica Normal", Arial, sans-serif;
+  font-size: 1.3em;
+}
+
+.type-material{
+  margin-bottom: 1em;
+}
+
+.separator{
+  margin-bottom: 2em;
+  visibility: hidden;
+}
+

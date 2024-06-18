@@ -1,0 +1,17 @@
+@media (min-width: 800px) {
+  input[type='submit'] {
+    min-width: 40%;
+    max-width: 40%;
+  }
+
+  form div p {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  form {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+}

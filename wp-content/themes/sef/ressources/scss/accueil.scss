@@ -9,19 +9,28 @@ html {
   position: absolute;
 }
 
+/*body{
+  background-image: url($landing-image);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}*/
+
+body {
+  background-image: url($landing-image);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .main {
-  color: $white;
+  background-color: rgba(0,0,0,.5);
 
   &__landing {
     text-align: center;
-    background-image: url($landing-image);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, .5);
     color: $white;
 
-    h2 {
+    #main__landing__title {
       font-size: $sef-title;
       font-family: $font-stack-bold;
     }
@@ -33,6 +42,7 @@ html {
 
     p {
       font-family: $font-stack-normal;
+      font-size: 2em;
       padding-bottom: 3em;
     }
 
@@ -44,21 +54,38 @@ html {
     }
   }
 
-  &__sections-accueil {
-    text-align: center;
-    background-color: $white;
+  &__sections {
+    background-color: $primary-color;
+    padding-top: $section-margin-bottom;
+    padding-bottom: $section-margin-bottom;
 
     &__others-p {
       font-family: $font-stack-normal;
       font-size: $section-h3;
-      background-color: $primary-color;
+      background-color: $white;
       margin-bottom: 1em;
       padding: 2em 0 2em 0;
       box-shadow: $shadow;
+      text-align: center;
 
-      a {
-        color: $white;
+      &__links {
+        color: $primary-color;
+        background-image: url($fleche-links);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: .5em;
+        padding-right: .8em;
+        text-decoration: none;
+        transition: all .3s ease-in-out;
+      }
+
+      &__links:hover {
+        text-decoration: underline;
+        padding-right: 1.2em;
       }
     }
   }
 }
+
+@import "accueil-mediaqueries/accueil-over-800px";
+@import "accueil-mediaqueries/accueil-over-1300px";

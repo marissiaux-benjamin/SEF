@@ -1,8 +1,8 @@
 
 .footer {
   padding: 3em 1em;
-  background-color: $primary-color;
-  color: $white;
+  background-color: $white;
+  color: $primary-color;
   display: flex;
   flex-wrap: wrap;
   gap: 2.5em 6em;
@@ -21,19 +21,22 @@
       font-size: 1.1em;
 
       &__item {
-      font-family: $font-stack-normal;
+        font-family: $font-stack-normal;
         margin-bottom: .5em;
         line-height: 1.5em;
 
         &__link, &__mail, &__nav {
           padding: .5em 1.5em .5em 0;
-          font-family: Helvetica,sans-serif;
+          font-family: $font-stack-normal;
+          color: $primary-color;
+          text-decoration: underline;
+        }
+
+        &__link:hover, &__mail:hover, &__nav:hover {
           text-decoration: none;
-          color: white;
         }
       }
     }
-
 
     &__item {
       &__facebook {
